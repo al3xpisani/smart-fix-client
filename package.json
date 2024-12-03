@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "postinstall": "npm install --force @testing-library/react@16.0.1"
   },
   "dependencies": {
     "next": "15.0.3",
