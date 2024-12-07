@@ -4,10 +4,15 @@ import { PlayIcon } from '@heroicons/react/24/solid';
 
 export const Banner = () => {
   return (
-    <div className='mb-10'>
+    <div className='mb-4'>
       <div className='flex flex-col space-y-2 py-16 md:space-y-4 lg:h-[90vh] lg:justify-end lg:pb-12'>
         <div className='absolute left-0 top-0 -z-10 h-[95vh] w-screen bg-black bg-transparent'>
-          <Image src='/banner-v2.png' alt='Do it yourself' fill={true} />
+          <Image
+            src='/banner-v2.png'
+            alt='Do it yourself'
+            fill={true}
+            loading='lazy'
+          />
         </div>
 
         <h1 className='text-2xl font-bold md:text-4xl lg:text-7xl'>
