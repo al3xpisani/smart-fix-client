@@ -1,7 +1,12 @@
 import { getUserById } from '@/app/lib/getUserSetting';
 
-const UserById = async ({ params }: { params: { id: string } }) => {
-  const { id, name, username } = await getUserById(params.id);
+interface ParamsProps {
+  params: Promise<{ id: string }>;
+}
+
+const UserById = async ({ params }: ParamsProps) => {
+  const { id } = await params;
+  const { name, username } = await getUserById(id);
   return (
     <div className='text-2xl font-bold'>
       <h3>User id : {id}</h3>
