@@ -3,8 +3,7 @@ import { LoginValidation } from '@/app/lib/validations/LoginValidationForm';
 
 export async function POST(request: NextRequest) {
   try {
-    const { email, password } = LoginValidation.parse(await request.json());
-    console.log('email.... ' + email, 'password.... ' + password);
+    LoginValidation.parse(await request.json());
     return new NextResponse('It worked.');
   } catch (error) {
     if(error instanceof Error){

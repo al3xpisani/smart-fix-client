@@ -8,7 +8,6 @@ type Errors = {
 export default function LoginAuth() {
   const router = useRouter();
   const [errors, setErrors] = useState<string[]>([]);
-  console.log(errors);
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const formData = new FormData(e.currentTarget);
@@ -27,7 +26,7 @@ export default function LoginAuth() {
       const payload = await response.json();
       setErrors(payload.map((error: Errors) => error.message));
     } catch (error) {
-      console.log(error);
+      console.log(error, errors);
       setErrors(['An unknown error has occured']);
     }
   };
