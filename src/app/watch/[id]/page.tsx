@@ -1,4 +1,5 @@
 import Header from '@/app/components/Header';
+import Player from '@/app/components/Player';
 import { getMovieById } from '@/app/service/MovieService';
 import React from 'react';
 
@@ -21,4 +22,5 @@ export default async function WatchMovie({ params }: IMovieParam) {
       </div>
     );
   }
+  return <Player movie={movie} />;
 }
