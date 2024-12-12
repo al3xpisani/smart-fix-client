@@ -1,5 +1,5 @@
 import { apolloClient } from '../apolloClient';
-import { GET_MOVIES_BY_GENRE } from '../movieQueries';
+import { GET_MOVIES_BY_GENRE, GET_MOVIES_BY_ID } from '../movieQueries';
 
 export const getMoviesByGenre = async (
   genre: string,
@@ -11,4 +11,12 @@ export const getMoviesByGenre = async (
     variables: { genre, limit },
   });
   return data.moviesByGenre;
+};
+
+export const getFeaturedMovieById = async (id: string) => {
+  const { data } = await apolloClient.query({
+    query: GET_MOVIES_BY_ID,
+    variables: { id },
+  });
+  return data.movie;
 };

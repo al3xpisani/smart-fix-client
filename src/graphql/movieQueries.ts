@@ -17,7 +17,7 @@ export const GET_MOVIES = gql`
 
 export const GET_MOVIES_BY_ID = gql`
   query GetMoviesById($id: ID!) {
-    moviesById(id: $id) {
+    movie(id: $id) {
       id
       title
       description

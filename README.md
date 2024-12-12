@@ -16,18 +16,26 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+# SmartFix - A responsive FrontEnd app written in Next, TS, GraphQL, TailWind CSS. It hits the JSON-Server deployed at Vercel.
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# GraphQL Server - Movies and Featureds
+Sandbox graphql studio
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![Screenshot](https://i.ibb.co/tLvTJ4C/image.png)
+
+# GraphQL snippet - Movies and Featureds
+code base
+
+![Screenshot](https://i.ibb.co/LpBGJ9s/image.png)
+
+
+# GraphQL snippet - useMovies
+![Screenshot](https://i.ibb.co/WBrb3M4/image.png)
+
+
 
 ## Deploy on Vercel
 
